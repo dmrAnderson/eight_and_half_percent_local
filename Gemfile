@@ -27,9 +27,6 @@ gem "stimulus-rails"
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
 gem "cssbundling-rails"
 
-# Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder"
-
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
 
@@ -64,5 +61,7 @@ group :development do
   # gem "spring"
 end
 
-
 gem "devise", "~> 4.8"
+gem "slim-rails", "~> 3.5"
+gem "simple_form", "~> 5.1"
+gem "faker", "~> 2.22"

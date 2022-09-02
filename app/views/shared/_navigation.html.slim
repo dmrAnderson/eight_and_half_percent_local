@@ -1,0 +1,36 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom
+  .container
+    = link_to 'Home', root_path, class: 'navbar-brand'
+    button.navbar-toggler aria-controls="navbarText" aria-expanded="false" aria-label=("Toggle navigation") data-bs-target="#navbarText" data-bs-toggle="collapse" type="button"
+      span.navbar-toggler-icon
+    #navbarText.collapse.navbar-collapse
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0
+        li.nav-item
+          = link_to 'Products', '#', class: 'nav-link'
+      ul.nav.nav-pills.mb-2.mb-lg-0
+        - if user_signed_in?
+          li.nav-item
+            = link_to cart_path, class: 'btn btn-outline-secondary d-flex justify-content-between' do
+              i.bi.bi-cart2.me-2
+              = turbo_frame_tag :cart_counter, src: counter_cart_path, loading: :lazy, class: 'd-block my-auto' do
+                = render 'shared/spinner', size: 'sm'
+          li.nav-item.dropdown.ms-3
+            a.dropdown-toggle.btn.btn-outline-primary aria-expanded="false" data-bs-toggle="dropdown" href="#" role="button"
+              i.bi.bi-person.me-2
+              = current_user.name
+            ul.dropdown-menu
+              li
+                = link_to edit_user_registration_path, class: 'dropdown-item' do
+                  i.bi.bi-pencil-square.me-2
+                  | Edit
+              li
+                hr.dropdown-divider
+              li
+                = button_to destroy_user_session_path, method: :delete, class: 'dropdown-item' do
+                  i.bi.bi-escape.me-2
+                  | Sign out
+        - else
+          li.nav-item
+            = link_to 'Sign in', new_user_session_path, class: 'nav-link'
+          li.nav-item
+            = link_to 'Sign up', new_user_registration_path, class: 'nav-link active'

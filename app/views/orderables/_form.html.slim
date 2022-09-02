@@ -1,0 +1,4 @@
+= simple_form_for(:orderable, url: path) do |f|
+  = f.hidden_field :product_id, value: product.id
+  = f.input :quantity, input_html: { value: 1, maxlength: 1 }
+  = f.button :submit, '+'

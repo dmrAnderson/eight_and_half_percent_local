@@ -1,0 +1,9 @@
+= turbo_frame_tag @product do
+  h1 Editing product
+
+  = render 'form', product: @product
+
+  br
+
+  = link_to 'Show this product', @product
+  = link_to 'Back to products', product_path(@product)

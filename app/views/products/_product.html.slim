@@ -1,0 +1,14 @@
+.col-sm-3
+  .card
+    svg.bd-placeholder-img.card-img-top aria-label="Placeholder" focusable="false" height="180" preserveaspectratio=("xMidYMid slice") role="img" width="100%" xmlns="http://www.w3.org/2000/svg"
+      title Placeholder
+      rect fill="#20c997" height="100%" width="100%"
+    .card-body
+      h5.card-title = product.name
+      h6.card-subtitle.mb-2.badge.text-bg-light = number_to_currency(product.price)
+      p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+      = render 'orderables/form', product: product, path: add_orderables_path
+      = render 'orderables/form', product: product, path: remove_orderables_path
+      = link_to product_path(product), class: 'btn btn-outline-primary' do
+        i.bi.bi-arrow-up-right-square.me-2
+        | View details
