@@ -5,6 +5,7 @@ AllCops:
     - db/schema.rb
     - bin/*
     - config/initializers/*
+    - vendor/**/*
 
 Style/Documentation:
   Enabled: false
