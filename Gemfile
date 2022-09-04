@@ -65,3 +65,4 @@ gem "devise", "~> 4.8"
 gem "slim-rails", "~> 3.5"
 gem "simple_form", "~> 5.1"
 gem "faker", "~> 2.22"
+gem 'view_component', '~> 2.71'

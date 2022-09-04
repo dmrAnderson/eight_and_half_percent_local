@@ -7,8 +7,7 @@
       h5.card-title = product.name
       h6.card-subtitle.mb-2.badge.text-bg-light = number_to_currency(product.price)
       p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-      = render 'orderables/form', product: product, path: add_orderables_path
-      = render 'orderables/form', product: product, path: remove_orderables_path
-      = link_to product_path(product), class: 'btn btn-outline-primary' do
-        i.bi.bi-arrow-up-right-square.me-2
-        | View details
+      = render Orderables::Forms::AddComponent.new(product: product)
+      = render Orderables::Forms::RemoveComponent.new(product: product)
+      = link_to product_path(product), class: 'btn btn-outline-primary', data: { turbo_action: :advance } do
+        = render IconComponent.new(klass: 'arrow-up-right-square').with_content('View details')

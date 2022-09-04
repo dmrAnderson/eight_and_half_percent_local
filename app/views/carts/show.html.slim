@@ -16,12 +16,12 @@ table.table.table-hover.table-bordered.table-sm.caption-top
         th scope='row' = orderable.id
         td = orderable.product.name
         td = number_to_currency(orderable.product.price)
-        / td = orderable.quantity
-        td = render 'orderables/form', product: orderable.product, path: add_orderables_path
-        td = render 'orderables/form', product: orderable.product, path: remove_orderables_path
+        / td = orderables.quantity
+        td = render Orderables::Forms::AddComponent.new(product: orderable.product)
+        td = render Orderables::Forms::RemoveComponent.new(product: orderable.product)
         td = number_to_currency(orderable.total)
         td = button_to orderable_path(orderable), method: :delete, class: 'btn' do
-          i.bi.bi-x
+          = render IconComponent.new(klass: 'x')
   tfoot.table-group-divider
     tr
       td colspan='4' Total

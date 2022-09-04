@@ -1,0 +1,7 @@
+= turbo_frame_tag :products do
+  = render @product
+
+  = link_to 'Edit this product', edit_product_path(@product)
+  = link_to 'Back to products', root_path, data: { turbo_frame: :root, turbo_action: :advance }
+
+  = button_to 'Destroy this product', @product, method: :delete
