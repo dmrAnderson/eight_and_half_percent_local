@@ -28,5 +28,3 @@ gem 'view_component', '~> 2.71'
 group :development, :test do
   gem 'rubocop', '~> 1.36', require: false
 end
-
-group :development, {}
