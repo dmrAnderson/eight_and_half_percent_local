@@ -1,0 +1,10 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0.4
+  Exclude:
+    - db/schema.rb
+    - bin/*
+    - config/initializers/*
+
+Style/Documentation:
+  Enabled: false

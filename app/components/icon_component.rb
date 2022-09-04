@@ -2,6 +2,7 @@
 
 class IconComponent < ApplicationComponent
   def initialize(klass:)
+    super
     @klass = klass
   end
 
@@ -15,7 +16,7 @@ class IconComponent < ApplicationComponent
   private
 
   def icon
-    tag.i class: %W(bi bi-#{@klass})
+    tag.i class: %W[bi bi-#{@klass}]
   end
 
   def text
