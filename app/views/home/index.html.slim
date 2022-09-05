@@ -5,5 +5,5 @@
     .col-auto.my-auto
       = link_to 'New product', new_product_path, class: 'btn btn-primary'
 
-  = turbo_frame_tag :products, src: products_path, loading: :lazy do
+  = turbo_frame_tag :products_page, src: products_path, loading: :lazy do
     = render 'shared/spinner'

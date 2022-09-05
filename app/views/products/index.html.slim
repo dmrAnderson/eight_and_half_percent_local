@@ -1,3 +1,9 @@
-= turbo_frame_tag :products do
-  .row.gy-4
-    = render @products
+= turbo_frame_tag :products_page do
+  .row
+    .col
+      = search_form_for @q, data: { turbo_frame: :product_collection, turbo_action: :advance, controller: 'form', action: 'input->form#submit' } do |f|
+        .input-group.mb-3
+          = f.search_field :name_cont, class: 'form-control', placeholder: 'Search...'
+  = turbo_frame_tag :product_collection do
+    .row.gy-4
+      = render @products
