@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 class ProductsController < ApplicationController
+  include Pagy::Backend
+
   before_action :set_product, only: %i[show edit update destroy]
 
   def index
     @q = Product.ransack(params[:q])
-    @products = @q.result(distinct: true)
+    @pagy, @products = pagy(@q.result(distinct: true))
   end
 
   def show; end

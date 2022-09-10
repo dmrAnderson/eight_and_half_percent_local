@@ -11,9 +11,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom
         - if user_signed_in?
           li.nav-item
             = link_to cart_path, class: 'btn btn-outline-secondary d-flex justify-content-between' do
-              = render IconComponent.new(klass: 'cart2')
-              = turbo_frame_tag :cart_counter, src: counter_cart_path, loading: :lazy, class: 'd-block my-auto' do
-                = render 'shared/spinner', size: 'sm'
+              = render IconComponent.new(klass: 'cart2') do
+                = turbo_frame_tag :cart_counter, src: counter_cart_path, loading: :lazy do
+                  = render 'shared/spinner', size: 'sm'
           li.nav-item.dropdown.ms-3
             a.dropdown-toggle.btn.btn-outline-primary aria-expanded="false" data-bs-toggle="dropdown" href="#" role="button"
               = render IconComponent.new(klass: 'person').with_content(current_user.name)

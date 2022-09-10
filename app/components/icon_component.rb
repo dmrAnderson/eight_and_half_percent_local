@@ -22,7 +22,7 @@ class IconComponent < ApplicationComponent
   def text
     return if content.blank?
 
-    tag.span class: 'ms-2' do
+    tag.span class: 'ms-2 my-auto' do
       content
     end
   end
