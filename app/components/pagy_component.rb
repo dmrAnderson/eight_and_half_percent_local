@@ -9,7 +9,7 @@ class PagyComponent < ApplicationComponent
   end
 
   def call
-    raw(pagination)
+    sanitize(pagination)
   end
 
   private
