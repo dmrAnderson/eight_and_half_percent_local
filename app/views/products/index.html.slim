@@ -5,7 +5,7 @@
     .col
       = link_to 'New product', new_product_path, class: 'btn btn-primary'
     .col
-      = search_form_for @q, data: { turbo_frame: :collection, turbo_action: :advance, controller: 'form', action: 'input->form#submit' } do |f|
+      = search_form_for @query, data: { turbo_frame: :collection, turbo_action: :advance, controller: 'form', action: 'input->form#submit' } do |f|
         .input-group.mb-3
           = f.search_field :name_cont, class: 'form-control', placeholder: 'Search...'
     .col
@@ -16,4 +16,4 @@
         .col
           .row.justify-content-center
             .col-auto
-              = render PagyComponent.new(@pagy)
+              = render PagyComponent.new(pagy: @pagy)

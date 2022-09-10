@@ -15,8 +15,10 @@ class IconComponent < ApplicationComponent
 
   private
 
+  attr_reader :klass
+
   def icon
-    tag.i class: %W[bi bi-#{@klass}]
+    tag.i class: %W[bi bi-#{klass}]
   end
 
   def text

@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
-module Orderables
-  module Forms
-    class BaseComponent < ApplicationComponent
-      def initialize(product:)
-        super
-        @product = product
-      end
+class Orderables::Forms::BaseComponent < ApplicationComponent
+  def initialize(product:)
+    super
+    @product = product
+  end
 
-      private
+  private
 
-      attr_reader :product
+  attr_reader :product
 
-      def submit_button
-        button_tag type: :submit, class: 'btn btn-light btn-sm' do
-          render IconComponent.new(klass: _icon_class)
-        end
-      end
+  def submit_button
+    button_tag type: :submit, class: 'btn btn-light btn-sm' do
+      render IconComponent.new(klass: _icon_class)
     end
+  end
+
+  def quantity_input_value
+    helpers.current_cart.orderables.find_by(product: product)&.quantity || 1
   end
 end

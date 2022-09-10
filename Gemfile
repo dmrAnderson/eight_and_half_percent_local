@@ -10,6 +10,7 @@ gem 'rails', '~> 7.0', '>= 7.0.4'
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
 gem 'devise', '~> 4.8'
+gem 'friendly_id', '~> 5.4', '>= 5.4.2'
 gem 'jsbundling-rails'
 gem 'pagy', '~> 5.10', '>= 5.10.1'
 gem 'pg', '~> 1.1'

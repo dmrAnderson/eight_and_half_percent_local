@@ -1,28 +1,29 @@
-h1 Cart
+= render 'shared/root' do
+  h1 Cart
 
-table.table.table-hover.table-bordered.table-sm.caption-top
-  caption List of products
-  thead
-    tr
-      th scope='col' #
-      th scope='col' Name
-      th scope='col' Price
-      th scope='col' Quantity
-      th scope='col' Total
-      th scope='col'
-  tbody
-    - current_cart.orderables.each do |orderable|
+  table.table.table-hover.table-bordered.table-sm.caption-top
+    caption List of products
+    thead
       tr
-        th scope='row' = orderable.id
-        td = orderable.product.name
-        td = number_to_currency(orderable.product.price)
-        / td = orderables.quantity
-        td = render Orderables::Forms::AddComponent.new(product: orderable.product)
-        td = render Orderables::Forms::RemoveComponent.new(product: orderable.product)
-        td = number_to_currency(orderable.total)
-        td = button_to orderable_path(orderable), method: :delete, class: 'btn' do
-          = render IconComponent.new(klass: 'x')
-  tfoot.table-group-divider
-    tr
-      td colspan='4' Total
-      td = number_to_currency(current_cart.total)
+        th scope='col' #
+        th scope='col' Name
+        th scope='col' Price
+        th scope='col' Quantity
+        th scope='col' Total
+        th scope='col'
+    tbody
+      - current_cart.orderables.each do |orderable|
+        tr
+          th scope='row' = orderable.id
+          td = orderable.product.name
+          td = number_to_currency(orderable.product.price)
+          / td = orderables.quantity
+          td = render Orderables::Forms::AddComponent.new(product: orderable.product)
+          td = render Orderables::Forms::RemoveComponent.new(product: orderable.product)
+          td = number_to_currency(orderable.total)
+          td = button_to orderable_path(orderable), method: :delete, class: 'btn' do
+            = render IconComponent.new(klass: 'x')
+    tfoot.table-group-divider
+      tr
+        td colspan='4' Total
+        td = number_to_currency(current_cart.total)

@@ -3,7 +3,7 @@
 class PagyComponent < ApplicationComponent
   include Pagy::Frontend
 
-  def initialize(pagy)
+  def initialize(pagy:)
     super
     @pagy = pagy
   end
@@ -14,11 +14,13 @@ class PagyComponent < ApplicationComponent
 
   private
 
+  attr_reader :pagy
+
   def pagination
-    pagy_bootstrap_nav(@pagy)
+    pagy_bootstrap_nav(pagy)
   end
 
   def render?
-    @pagy.pages > 1
+    pagy.pages > 1
   end
 end

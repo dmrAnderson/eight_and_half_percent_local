@@ -6,11 +6,19 @@ class OrderablesController < ApplicationController
   end
 
   def add
-    current_cart.orderables.find_or_create_by(permitted_params)
+    current_cart.orderables.find_or_initialize_by(product_id: permitted_params[:product_id]).tap do |orderable|
+      orderable.update!(quantity: permitted_params[:quantity])
+    end
   end
 
   def remove
-    current_cart.orderables.destroy_by(permitted_params)
+    current_cart.orderables.find_by(product_id: permitted_params[:product_id]).tap do |orderable|
+      next if orderable.blank?
+
+      (orderable.quantity -= permitted_params[:quantity].to_i).tap do |quantity|
+        quantity.positive? ? orderable.update!(quantity: quantity) : orderable.destroy!
+      end
+    end
   end
 
   private

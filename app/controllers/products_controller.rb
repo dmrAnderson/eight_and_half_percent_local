@@ -6,8 +6,8 @@ class ProductsController < ApplicationController
   before_action :set_product, only: %i[show edit update destroy]
 
   def index
-    @q = Product.ransack(params[:q])
-    @pagy, @products = pagy(@q.result(distinct: true))
+    @query = Product.ransack(params[:query])
+    @pagy, @products = pagy(@query.result(distinct: true))
   end
 
   def show; end
@@ -44,7 +44,7 @@ class ProductsController < ApplicationController
   private
 
   def set_product
-    @product = Product.find(params[:id])
+    @product = Product.friendly.find(params[:id])
   end
 
   def product_params

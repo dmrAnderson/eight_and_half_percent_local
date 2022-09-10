@@ -1,6 +1,6 @@
-nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom
+nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom.sticky-top
   .container
-    = link_to 'Home', root_path, class: 'navbar-brand'
+    = link_to 'Home', root_path, data: { turbo_frame: :root, turbo_action: :advance }, class: 'navbar-brand'
     button.navbar-toggler aria-controls="navbarText" aria-expanded="false" aria-label=("Toggle navigation") data-bs-target="#navbarText" data-bs-toggle="collapse" type="button"
       span.navbar-toggler-icon
     #navbarText.collapse.navbar-collapse
@@ -10,7 +10,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom
       ul.nav.nav-pills.mb-2.mb-lg-0
         - if user_signed_in?
           li.nav-item
-            = link_to cart_path, class: 'btn btn-outline-secondary d-flex justify-content-between' do
+            = link_to cart_path, data: { turbo_frame: :root, turbo_action: :advance }, class: 'btn btn-outline-secondary d-flex justify-content-between' do
               = render IconComponent.new(klass: 'cart2') do
                 = turbo_frame_tag :cart_counter, src: counter_cart_path, loading: :lazy do
                   = render 'shared/spinner', size: 'sm'

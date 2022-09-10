@@ -4,7 +4,7 @@
       title Placeholder
       rect fill="#20c997" height="100%" width="100%"
     .card-body
-      h5.card-title = highlight(product.name, params.dig(*%i[q name_cont]), highlighter: '<b class="text-primary">\1</b>')
+      h5.card-title = highlight(product.name, params.dig(Ransack::Configuration.options[:search_key], :name_cont), highlighter: '<b class="text-primary">\1</b>')
       h6.card-subtitle.mb-2.badge.text-bg-light = number_to_currency(product.price)
       p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
       = render Orderables::Forms::AddComponent.new(product: product)
