@@ -1,3 +1,3 @@
 = render 'shared/root' do
   = turbo_frame_tag :products_page, src: products_path, loading: :lazy, class: 'd-block container' do
-    = render 'shared/spinner'
+    = render LoaderComponent.new

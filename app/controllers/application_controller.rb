@@ -3,7 +3,7 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
 
-  private
+  include ErrorHandler
 
   def current_cart
     current_user.cart

@@ -12,7 +12,7 @@
       = turbo_frame_tag :collection, class: 'row row-cols-1 gy-4' do
         .col
           .row.gy-4
-            = render @products
+            = render ProductComponent.with_collection(@products)
         .col
           .row.justify-content-center
             .col-auto

@@ -1,5 +1,5 @@
-= turbo_frame_tag :products_page do
-  = render @product
+= turbo_frame_tag :products_page, class: 'd-block container' do
+  = render ProductComponent.new(product: @product)
 
   = link_to 'Edit this product', edit_product_path(@product)
   = link_to 'Back to products', root_path, data: { turbo_frame: :root, turbo_action: :advance }

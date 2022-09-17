@@ -1,0 +1,12 @@
+.col-lg-6.col-xl-4.col-xxl-3
+  .card
+    svg.bd-placeholder-img.card-img-top aria-label="Placeholder" focusable="false" height="180" preserveaspectratio=("xMidYMid slice") role="img" width="100%" xmlns="http://www.w3.org/2000/svg"
+      title Placeholder
+      rect fill="#20c997" height="100%" width="100%"
+    .card-body
+      h5.card-title = title
+      h6.card-subtitle.mb-2.badge.text-bg-light = subtitle
+      p.card-text = description
+      = render Orderables::Forms::AddComponent.new(product: product)
+      = render Orderables::Forms::RemoveComponent.new(product: product)
+      = show_link
