@@ -2,7 +2,6 @@
 
 class LoaderComponent < ApplicationComponent
   def initialize(size_klass: nil)
-    super
     @size_klass = size_klass
   end
 

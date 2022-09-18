@@ -2,7 +2,6 @@
 
 class IconComponent < ApplicationComponent
   def initialize(klass:)
-    super
     @klass = klass
   end
 

@@ -1,6 +1,15 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  root 'home#index'
+
+  devise_for :users,
+             controllers: {
+               omniauth_callbacks: 'users/omniauth_callbacks'
+             }
+
+  resources :products
+
   resource :cart, only: :show do
     collection do
       get :counter
@@ -13,8 +22,4 @@ Rails.application.routes.draw do
       post 'remove'
     end
   end
-
-  resources :products
-  root 'home#index'
-  devise_for :users, path: :auth
 end

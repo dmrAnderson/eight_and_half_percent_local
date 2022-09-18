@@ -2,7 +2,6 @@
 
 class ProductComponent < ApplicationComponent
   def initialize(product:)
-    super
     @product = product
   end
 

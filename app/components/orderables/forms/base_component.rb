@@ -2,7 +2,6 @@
 
 class Orderables::Forms::BaseComponent < ApplicationComponent
   def initialize(product:)
-    super
     @product = product
   end
 
