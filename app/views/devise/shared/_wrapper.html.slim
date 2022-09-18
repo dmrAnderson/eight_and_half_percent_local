@@ -1,0 +1,9 @@
+.row.justify-content-center
+  .col-sm-8.col-lg-8.col-xl-6.col-xxl-4
+    .card
+      .card-body.mx-3
+        .text-center.py-4
+          = yield
+        = yield :form
+        hr
+        = render 'devise/shared/links'

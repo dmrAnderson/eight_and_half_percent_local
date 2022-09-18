@@ -3,10 +3,8 @@
 class User < ApplicationRecord
   after_create_commit :create_cart!
 
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+  devise :database_authenticatable, :registerable, :confirmable,
+         :recoverable, :rememberable, :validatable, :lockable
 
   has_one :cart, dependent: :destroy
 

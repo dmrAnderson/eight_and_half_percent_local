@@ -1,0 +1,21 @@
+= render 'devise/shared/wrapper' do
+  h2 Change your password
+
+  = content_for :form do
+    = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
+      = f.error_notification
+      = f.input :reset_password_token, as: :hidden
+      = f.full_error :reset_password_token
+      = f.input :password,
+                  label: 'New password',
+                  required: true,
+                  autofocus: true,
+                  placeholder: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                  input_html: { autocomplete: 'new-password' }
+      = f.input :password_confirmation,
+                  label: 'Confirm your new password',
+                  required: true,
+                  input_html: { autocomplete: 'new-password' }
+
+      .d-grid
+        = f.button :submit, 'Change my password'
