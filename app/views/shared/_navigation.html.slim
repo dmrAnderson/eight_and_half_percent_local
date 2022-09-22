@@ -16,7 +16,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom.sticky-top
                   = render LoaderComponent.new(size_klass: 'sm')
           li.nav-item.dropdown
             a.dropdown-toggle.nav-link aria-expanded="false" data-bs-toggle="dropdown" href="#" role="button"
-              = render IconComponent.new(klass: 'person').with_content(current_user.name)
+              = render Navigations::UserComponent.new(user: current_user)
             ul.dropdown-menu
               li
                 = link_to edit_user_registration_path, class: 'dropdown-item' do

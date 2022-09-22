@@ -10,6 +10,7 @@ html
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
   body
     = render 'shared/navigation'
-    / p = notice
-    / p = alert
+    - unless devise_controller?
+      p = notice
+      p = alert
     = yield

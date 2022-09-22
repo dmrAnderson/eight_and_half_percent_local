@@ -17,7 +17,9 @@ h2 Edit #{resource_name.to_s.humanize}
           placeholder: "we need your current password to confirm your changes",
           required: true,
           input_html: { autocomplete: 'current-password' }
-  = f.button :submit, 'Update'
+
+  .d-grid
+    = f.button :submit, 'Update'
 
 h3 Cancel my account
 

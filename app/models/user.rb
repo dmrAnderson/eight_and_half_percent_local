@@ -9,10 +9,6 @@ class User < ApplicationRecord
 
   has_one :cart, dependent: :destroy
 
-  def name
-    email.split('@')[0]
-  end
-
   private
 
   def create_cart!

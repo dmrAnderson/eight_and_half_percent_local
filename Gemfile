@@ -19,11 +19,11 @@ gem 'pg', '~> 1.1'
 gem 'propshaft'
 gem 'puma', '~> 5.0'
 gem 'ransack', '~> 3.2', '>= 3.2.1'
-gem 'redis', '~> 5.0', '>= 5.0.4'
+gem 'redis', '~> 5.0', '>= 5.0.5'
 gem 'simple_form', '~> 5.1'
 gem 'slim-rails', '~> 3.5'
 gem 'stimulus-rails'
-gem 'turbo-rails'
+gem 'turbo-rails', '~> 1.3'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'view_component', '~> 2.72'
 
