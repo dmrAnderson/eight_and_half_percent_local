@@ -2,8 +2,11 @@
   h2 Resend unlock instructions
 
   = content_for :form do
-    = simple_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f|
-      = f.error_notification
+    = simple_form_for resource,
+            as: resource_name,
+            url: unlock_path(resource_name),
+            html: { method: :post } do |f|
+
       = f.full_error :unlock_token
       = f.input :email,
                   required: true,

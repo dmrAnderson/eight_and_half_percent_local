@@ -25,7 +25,7 @@ gem 'slim-rails', '~> 3.5'
 gem 'stimulus-rails'
 gem 'turbo-rails', '~> 1.3'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'view_component', '~> 2.72'
+gem 'view_component', '~> 2.74'
 
 # gem "kredis"
 # gem "image_processing", "~> 1.2"
@@ -39,6 +39,6 @@ group :development, :test do
   gem 'rubocop', '~> 1.36', require: false
   gem 'rubocop-performance', '~> 1.15', require: false
   gem 'rubocop-rails', '~> 2.16', '>= 2.16.1', require: false
-  gem 'rubocop-rspec', '~> 2.13', '>= 2.13.1', require: false
+  gem 'rubocop-rspec', '~> 2.13', '>= 2.13.2', require: false
   gem 'simplecov', '~> 0.21.2', require: false
 end

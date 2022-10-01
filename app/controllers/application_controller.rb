@@ -3,7 +3,7 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
 
-  include ErrorHandler
+  include ErrorsHandlers::NotFound
 
   def current_cart
     current_user.cart
