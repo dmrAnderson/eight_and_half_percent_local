@@ -33,5 +33,5 @@
           p
             | Unhappy?
             =< link_to registration_path(resource_name), data: { turbo_method: :delete, turbo_confirm: t('confirm') }, class: 'btn btn-outline-danger btn-sm' do
-              = render IconComponent.new(klass: 'person-x').with_content('Cancel my account')
+              = render Icon::BaseComponent.new(klass: 'person-x').with_content('Cancel my account')
     = link_to 'Back', :back, data: { turbo_action: :advance }

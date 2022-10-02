@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class IconComponent < ApplicationComponent
+class Icon::BaseComponent < ApplicationComponent
   def initialize(klass:)
     @klass = klass
   end

@@ -11,7 +11,7 @@ class Orderables::Forms::BaseComponent < ApplicationComponent
 
   def submit_button
     button_tag type: :submit, class: 'btn btn-light btn-sm' do
-      render IconComponent.new(klass: _icon_class)
+      render Icon::BaseComponent.new(klass: _icon_class)
     end
   end
 

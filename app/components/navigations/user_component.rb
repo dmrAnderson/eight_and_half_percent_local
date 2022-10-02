@@ -6,7 +6,7 @@ class Navigations::UserComponent < ApplicationComponent
   end
 
   def call
-    render IconComponent.new(klass: klass).with_content(build_name)
+    render Icon::BaseComponent.new(klass: klass).with_content(build_name)
   end
 
   private

@@ -13,7 +13,7 @@ class Flash::BaseComponent < ApplicationComponent
   private
 
   def body
-    render IconComponent.new(klass: _icon_class).with_content(_message)
+    render Icon::BaseComponent.new(klass: _icon_class).with_content(_message)
   end
 
   def close_button

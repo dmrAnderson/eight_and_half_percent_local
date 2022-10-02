@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class BrandComponent < IconComponent
+class Icon::BrandComponent < Icon::BaseComponent
   def initialize
     @klass = 'gem'
   end
