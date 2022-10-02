@@ -1,7 +1,8 @@
 = turbo_frame_tag :products_page, class: 'd-block container' do
   = render ProductComponent.new(product: @product)
 
+  = link_to root_path, data: { turbo_frame: :root, turbo_action: :advance } do
+    = render Icon::BaseComponent.new(klass: 'arrow-up-left-circle').with_content('Back to products')
   = link_to 'Edit this product', edit_product_path(@product)
-  = link_to 'Back to products', root_path, data: { turbo_frame: :root, turbo_action: :advance }
 
   = link_to 'Destroy this product', @product, data: { turbo_method: :delete, turbo_confirm: t('confirm'), turbo_frame: :_top }

@@ -29,7 +29,7 @@ class ProductComponent < ApplicationComponent
     link_to product_path(product),
             class: 'btn btn-outline-primary btn-sm',
             data: { turbo_frame: :products_page, turbo_action: :advance } do
-      render Icon::BaseComponent.new(klass: 'arrow-up-right-square').with_content('View details')
+      render Icon::BaseComponent.new(klass: 'arrow-up-right-circle').with_content('View details')
     end
   end
 end

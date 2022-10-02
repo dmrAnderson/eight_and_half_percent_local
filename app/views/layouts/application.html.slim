@@ -11,6 +11,6 @@ html
   body
     = render 'shared/navigation'
     - unless devise_controller?
-      p = notice
-      p = alert
+      = render Flash::NoticeComponent.new
+      = render Flash::AlertComponent.new
     = yield
