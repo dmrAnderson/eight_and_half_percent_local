@@ -6,8 +6,8 @@
             as: resource_name,
             url: session_path(resource_name) do |f|
 
-      p.bg-primary = notice
-      p.bg-danger = alert
+      = render Flash::NoticeComponent.new
+      = render Flash::AlertComponent.new
 
       = f.input :email,
               required: true,

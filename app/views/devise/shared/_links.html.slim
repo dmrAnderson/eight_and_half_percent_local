@@ -1,29 +1,24 @@
-ul.nav.flex-column
+ul.nav.flex-column.alert.alert-light
   - if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations'
     li.nav-item
-      small  = link_to "Forgot your password?",
-              new_password_path(resource_name),
-              data: { turbo_action: :advance },
-              class: 'nav-link'
+      small  = link_to new_password_path(resource_name), data: { turbo_action: :advance }, class: 'nav-link' do
+        = render IconComponent.new(klass: 'envelope').with_content("Forgot your password?")
 
   - if devise_mapping.confirmable? && controller_name != 'confirmations'
     li.nav-item
       small
-        = link_to "Didn't receive confirmation instructions?",
-                new_confirmation_path(resource_name),
-                data: { turbo_action: :advance },
-                class: 'nav-link'
+        = link_to new_confirmation_path(resource_name), data: { turbo_action: :advance }, class: 'nav-link' do
+          = render IconComponent.new(klass: 'envelope').with_content("Didn't receive confirmation instructions?")
 
   - if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks'
     li.nav-item
       small
-        = link_to "Didn't receive unlock instructions?",
-                new_unlock_path(resource_name),
-                data: { turbo_action: :advance },
-                class: 'nav-link'
+        = link_to new_unlock_path(resource_name), data: { turbo_action: :advance }, class: 'nav-link' do
+          = render IconComponent.new(klass: 'envelope').with_content("Didn't receive unlock instructions?")
 
+ul.nav.flex-column.text-center
   - if devise_mapping.omniauthable?
     - resource_class.omniauth_providers.each do |provider|
       li.nav-item
-        small = button_to omniauth_authorize_path(resource_name, provider), data: { turbo: false }, class: 'btn' do
+        = button_to omniauth_authorize_path(resource_name, provider), data: { turbo: false }, class: 'btn btn-outline-primary' do
           = render IconComponent.new(klass: 'google').with_content("Sign in with #{OmniAuth::Utils.camelize(provider)}")

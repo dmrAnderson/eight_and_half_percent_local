@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resource :cart, only: :show do
     collection do
       get :counter
+      delete :clean
     end
   end
 

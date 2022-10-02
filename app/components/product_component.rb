@@ -27,7 +27,7 @@ class ProductComponent < ApplicationComponent
 
   def show_link
     link_to product_path(product),
-            class: 'btn btn-outline-primary',
+            class: 'btn btn-outline-primary btn-sm',
             data: { turbo_frame: :products_page, turbo_action: :advance } do
       render IconComponent.new(klass: 'arrow-up-right-square').with_content('View details')
     end
