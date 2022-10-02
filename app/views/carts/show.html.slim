@@ -1,6 +1,6 @@
 = render 'shared/root' do
   h1 Cart
-  = link_to clean_cart_path, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: 'btn btn-outline-danger btn-sm' do
+  = link_to clean_cart_path, data: { turbo_frame: :_top, turbo_method: :delete, turbo_confirm: t('confirm') }, class: 'btn btn-outline-danger btn-sm' do
     = render IconComponent.new(klass: 'cart-x').with_content('Clear')
 
   table.table.table-hover.table-bordered.table-sm.caption-top
@@ -20,10 +20,12 @@
           td = orderable.product.name
           td = number_to_currency(orderable.product.price)
           / td = orderables.quantity
-          td = render Orderables::Forms::AddComponent.new(product: orderable.product)
-          td = render Orderables::Forms::RemoveComponent.new(product: orderable.product)
+          td
+            .d-flex
+              = render Orderables::Forms::AddComponent.new(product: orderable.product)
+              = render Orderables::Forms::RemoveComponent.new(product: orderable.product)
           td = number_to_currency(orderable.total)
-          td = button_to orderable_path(orderable), method: :delete, class: 'btn' do
+          td = link_to orderable_path(orderable), data: { turbo_method: :delete }, class: 'btn' do
             = render IconComponent.new(klass: 'x-lg')
     tfoot.table-group-divider
       tr

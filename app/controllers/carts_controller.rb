@@ -8,10 +8,8 @@ class CartsController < ApplicationController
   end
 
   def clean
-    current_cart.orderables.then do |scope|
-      scope.clear if scope.any?
+    current_cart.orderables.clear
 
-      redirect_to root_path, status: :see_other
-    end
+    redirect_to root_path, status: :see_other
   end
 end
