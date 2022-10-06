@@ -2,7 +2,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom.sticky-top
   .container
     = link_to root_path, data: { turbo_frame: :root, turbo_action: :advance }, class: 'navbar-brand' do
       = render Icon::BrandComponent.new
-    button.navbar-toggler aria-controls="navbarText" aria-expanded="false" aria-label=("Toggle navigation") data-bs-target="#navbarText" data-bs-toggle="collapse" type="button"
+    button.navbar-toggler aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation' data-bs-target='#navbarText' data-bs-toggle='collapse' type='button'
       span.navbar-toggler-icon
     #navbarText.collapse.navbar-collapse
       ul.navbar-nav.me-auto.mb-2.mb-lg-0
@@ -19,7 +19,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom.sticky-top
                 = link_to cart_path, data: { turbo_frame: :root, turbo_action: :advance }, class: 'btn btn-primary' do
                   = render Icon::BaseComponent.new(klass: 'cart2')
           li.nav-item.dropdown.ms-3
-            a.dropdown-toggle.nav-link aria-expanded="false" data-bs-toggle="dropdown" href="#" role="button"
+            a.dropdown-toggle.nav-link aria-expanded='false' data-bs-toggle='dropdown' href='#' role='button'
               = render Navigations::UserComponent.new(user: current_user)
             ul.dropdown-menu
               li

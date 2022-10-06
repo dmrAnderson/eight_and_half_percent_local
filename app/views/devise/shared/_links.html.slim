@@ -1,8 +1,8 @@
 ul.nav.flex-column.alert.alert-light
   - if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations'
     li.nav-item
-      small  = link_to new_password_path(resource_name), data: { turbo_action: :advance }, class: 'nav-link' do
-        = render Icon::BaseComponent.new(klass: 'envelope').with_content("Forgot your password?")
+      small = link_to new_password_path(resource_name), data: { turbo_action: :advance }, class: 'nav-link' do
+        = render Icon::BaseComponent.new(klass: 'envelope').with_content('Forgot your password?')
 
   - if devise_mapping.confirmable? && controller_name != 'confirmations'
     li.nav-item
