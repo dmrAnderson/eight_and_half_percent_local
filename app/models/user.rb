@@ -8,10 +8,4 @@ class User < ApplicationRecord
          :omniauthable, omniauth_providers: %i[google_oauth2]
 
   has_one :cart, dependent: :destroy
-
-  private
-
-  def create_cart!
-    Cart.find_or_create_by!(user: self)
-  end
 end

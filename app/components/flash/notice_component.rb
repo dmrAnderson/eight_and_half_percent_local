@@ -4,7 +4,7 @@ class Flash::NoticeComponent < Flash::BaseComponent
   private
 
   def _bg_class
-    'primary'
+    'success'
   end
 
   def _message
@@ -12,6 +12,6 @@ class Flash::NoticeComponent < Flash::BaseComponent
   end
 
   def _icon_class
-    'info-circle'
+    'check-circle-fill'
   end
 end

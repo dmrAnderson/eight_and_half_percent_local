@@ -20,7 +20,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom.sticky-top
                   = render Icon::BaseComponent.new(klass: 'cart2')
           li.nav-item.dropdown.ms-3
             a.dropdown-toggle.nav-link aria-expanded='false' data-bs-toggle='dropdown' href='#' role='button'
-              = render Navigations::UserComponent.new(user: current_user)
+              = render Navigation::UserComponent.new(user: current_user)
             ul.dropdown-menu
               li
                 = link_to edit_user_registration_path, class: 'dropdown-item', data: { turbo_frame: :root, turbo_action: :advance } do

@@ -12,6 +12,6 @@ class Flash::AlertComponent < Flash::BaseComponent
   end
 
   def _icon_class
-    'exclamation-circle'
+    'exclamation-circle-fill'
   end
 end

@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-class Navigations::UserComponent < ApplicationComponent
+class Navigation::UserComponent < ApplicationComponent
   def initialize(user:)
     @user = user
   end
 
   def call
-    render Icon::BaseComponent.new(klass: klass).with_content(build_name)
+    render Icon::BaseComponent.new(klass: klass).with_content(content)
   end
 
   private
@@ -15,13 +15,13 @@ class Navigations::UserComponent < ApplicationComponent
 
   delegate(*%i[name email provider], to: :user, allow_nil: true)
 
-  def build_name
-    name || email.split('@')[0]
+  def content
+    name.presence || email.split('@')[0]
   end
 
   def klass
     {
       'google_oauth2' => 'google'
-    }.fetch(provider, 'person')
+    }.fetch(provider) { 'person' }
   end
 end

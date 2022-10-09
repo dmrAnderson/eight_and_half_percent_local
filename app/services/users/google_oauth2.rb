@@ -10,10 +10,9 @@ class Users::GoogleOauth2 < ApplicationService
   def build_user
     User.find_or_initialize_by(keys).tap do |user|
       user.skip_confirmation!
-      user.update!(user_params)
+      user.assign_attributes(user_params)
     end
   end
-  alias call build_user
 
   private
 
