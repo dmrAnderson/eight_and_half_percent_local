@@ -1,3 +1,5 @@
+[![RoR CI](https://github.com/dmrAnderson/EightAndAHalfPercent/actions/workflows/rubyonrails.yml/badge.svg?branch=main)](https://github.com/dmrAnderson/EightAndAHalfPercent/actions/workflows/rubyonrails.yml)
+
 # README
 
 This README would normally document whatever steps are necessary to get the
