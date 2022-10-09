@@ -16,7 +16,7 @@ class OrderablesController < ApplicationController
       next if orderable.blank?
 
       (orderable.quantity -= permitted_params[:quantity].to_i).tap do |quantity|
-        quantity.positive? ? orderable.update!(quantity: quantity) : orderable.destroy!
+        quantity.positive? ? orderable.update!(quantity:) : orderable.destroy!
       end
     end
   end

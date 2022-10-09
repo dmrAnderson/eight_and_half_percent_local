@@ -21,16 +21,16 @@ class Users::GoogleOauth2 < ApplicationService
 
   def keys
     {
-      provider: provider,
-      uid: uid
+      provider:,
+      uid:
     }
   end
 
   def user_params
     {
-      email: email,
+      email:,
       password: Devise.friendly_token[0, 20],
-      name: name,
+      name:,
       avatar_url: image
     }
   end

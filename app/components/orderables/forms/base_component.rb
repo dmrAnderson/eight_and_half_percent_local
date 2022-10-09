@@ -16,6 +16,6 @@ class Orderables::Forms::BaseComponent < ApplicationComponent
   end
 
   def quantity_input_value
-    helpers.current_cart.orderables.find_by(product: product)&.quantity || 1
+    helpers.current_cart.orderables.find_by(product:)&.quantity || 1
   end
 end
