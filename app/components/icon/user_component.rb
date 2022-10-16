@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Navigation::UserComponent < ApplicationComponent
+class Icon::UserComponent < ApplicationComponent
   def initialize(user:)
     @user = user
   end

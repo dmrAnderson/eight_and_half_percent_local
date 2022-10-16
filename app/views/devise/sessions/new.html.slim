@@ -6,8 +6,7 @@
             as: resource_name,
             url: session_path(resource_name) do |f|
 
-      = render Flash::NoticeComponent.new
-      = render Flash::AlertComponent.new
+      = render NotificationsComponent.new
 
       = f.input :email,
               required: true,

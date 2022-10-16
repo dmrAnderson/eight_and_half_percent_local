@@ -8,7 +8,7 @@ class User::AvatarComponent < ApplicationComponent
   end
 
   def call
-    image_tag content, alt: email, class: 'rounded'
+    image_tag content, alt: email, class: 'rounded', loading: 'lazy'
   end
 
   private
