@@ -7,7 +7,7 @@ class Navigation::BackButtonComponent < ApplicationComponent
 
   def call
     link_to path, data: { turbo_frame: path, turbo_action: :advance }, class: 'btn btn-outline-primary' do
-      render Icon::BaseComponent.new(klass: klass).with_content(content)
+      render Icon::BaseComponent.new(klass:).with_content(content)
     end
   end
 
