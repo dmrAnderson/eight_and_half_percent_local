@@ -11,7 +11,7 @@
       = f.input :email,
                   required: true,
                   autofocus: true,
-                  input_html: { autocomplete: 'email' }
+                  input_html: { autocomplete: 'email', pattern: Devise.email_regexp }
 
       .d-grid
         = f.button :submit, 'Resend unlock instructions'
