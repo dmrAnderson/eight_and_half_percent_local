@@ -9,14 +9,14 @@
       = f.input :email,
               required: true,
               autofocus: true,
-              input_html: { autocomplete: 'email' }
+              input_html: { autocomplete: 'email', pattern: Devise.email_regexp }
       = f.input :password,
               required: true,
               placeholder: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-              input_html: { autocomplete: 'new-password' }
+              input_html: { autocomplete: 'new-password', minlength: Devise.password_length.min, maxlength: Devise.password_length.max }
       = f.input :password_confirmation,
               required: true,
-              input_html: { autocomplete: 'new-password' }
+              input_html: { autocomplete: 'new-password', minlength: Devise.password_length.min, maxlength: Devise.password_length.max }
 
       .d-grid
         = f.button :submit, 'Sign up', data: { turbo_frame: :_top }

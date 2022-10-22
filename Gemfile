@@ -23,7 +23,7 @@ gem 'redis', '~> 5.0', '>= 5.0.5'
 gem 'simple_form', '~> 5.1'
 gem 'slim-rails', '~> 3.5'
 gem 'stimulus-rails'
-gem 'turbo-rails', '~> 1.3', '>= 1.3.1'
+gem 'turbo-rails', '~> 1.3', '>= 1.3.2'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'view_component', '~> 2.74', '>= 2.74.1'
 
@@ -40,10 +40,10 @@ group :test do
   gem 'brakeman', '~> 5.3', '>= 5.3.1', require: false
   gem 'bundler-audit', '~> 0.9.1', require: false
   gem 'database_cleaner-active_record', '~> 2.0', '>= 2.0.1', require: false
-  gem 'rspec-rails', '~> 6.0', require: false
-  gem 'rubocop', '~> 1.36', require: false
+  gem 'rspec-rails', '~> 6.0', '>= 6.0.1', require: false
+  gem 'rubocop', '~> 1.37', require: false
   gem 'rubocop-performance', '~> 1.15', require: false
-  gem 'rubocop-rails', '~> 2.16', '>= 2.16.1', require: false
+  gem 'rubocop-rails', '~> 2.17', require: false
   gem 'rubocop-rspec', '~> 2.13', '>= 2.13.2', require: false
   gem 'simplecov', '~> 0.21.2', require: false
   gem 'slim_lint', '~> 0.22.1', require: false

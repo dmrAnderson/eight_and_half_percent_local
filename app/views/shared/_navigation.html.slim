@@ -23,7 +23,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-white.mb-5.border-bottom.sticky-top
               = render Icon::UserComponent.new(user: current_user)
             ul.dropdown-menu
               li
-                = link_to '#offcanvasExample', class: 'dropdown-item', data: { bs_toggle: 'offcanvas' } do
+                = link_to edit_user_registration_path, class: 'dropdown-item', data: { turbo_frame: :root, turbo_action: :advance } do
                   = render Icon::BaseComponent.new(klass: 'pencil-square').with_content('Edit')
               li
                 hr.dropdown-divider
