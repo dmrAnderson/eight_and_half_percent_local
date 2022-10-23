@@ -26,12 +26,18 @@ class Users::GoogleOauth2 < ApplicationService
     }
   end
 
+  alias avatar_url image
+
   def user_params
     {
       email:,
-      password: Devise.friendly_token[0, 20],
+      password:,
       name:,
-      avatar_url: image
+      avatar_url:
     }
+  end
+
+  def password
+    Devise.friendly_token[0, 20]
   end
 end
