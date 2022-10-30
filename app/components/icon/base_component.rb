@@ -6,10 +6,7 @@ class Icon::BaseComponent < ApplicationComponent
   end
 
   def call
-    capture do
-      concat icon
-      concat text
-    end
+    icon.concat(text)
   end
 
   private

@@ -1,2 +1,12 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+button {
+  span.show-when-enabled { display: initial; }
+  span.show-when-disabled { display: none; }
+
+  &[disabled] {
+    span.show-when-enabled { display: none; }
+    span.show-when-disabled { display: initial; }
+  }
+}

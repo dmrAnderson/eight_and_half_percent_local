@@ -20,5 +20,4 @@
               required: true,
               input_html: { autocomplete: 'new-password', minlength: Devise.password_length.min, maxlength: Devise.password_length.max }
 
-      .d-grid
-        = f.button :submit, 'Sign up', data: { turbo_frame: :_top }
+      = render Button::SubmitFormComponent.new(f).with_content('Sign up')

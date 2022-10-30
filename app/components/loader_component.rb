@@ -6,12 +6,8 @@ class LoaderComponent < ApplicationComponent
   end
 
   def call
-    tag.div class: 'd-flex justify-content-center' do
-      tag.div class: loader_klass, role: 'status' do
-        tag.span class: 'visually-hidden' do
-          'Loading...'
-        end
-      end
+    tag.span class: loader_klass, role: 'status' do
+      content_tag(:span, ' Loading...', class: 'visually-hidden')
     end
   end
 

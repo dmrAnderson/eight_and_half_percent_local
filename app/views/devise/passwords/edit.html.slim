@@ -21,5 +21,4 @@
                   required: true,
                   input_html: { autocomplete: 'new-password' }
 
-      .d-grid
-        = f.button :submit, 'Change my password', data: { turbo_frame: :_top }
+      = render Button::SubmitFormComponent.new(f, data: { turbo_frame: :_top }).with_content('Change my password')

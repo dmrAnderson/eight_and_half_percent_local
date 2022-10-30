@@ -13,5 +13,4 @@
                   value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email),
                   input_html: { autocomplete: 'email', pattern: Devise.email_regexp }
 
-      .d-grid
-        = f.button :submit, 'Resend confirmation instructions'
+      = render Button::SubmitFormComponent.new(f).with_content('Resend confirmation instructions')
