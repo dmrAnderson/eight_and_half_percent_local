@@ -6,6 +6,8 @@
             as: resource_name,
             url: password_path(resource_name), html: { method: :put } do |f|
 
+      = invisible_captcha
+
       = f.input :reset_password_token, as: :hidden
       = f.full_error :reset_password_token
       = f.input :password,

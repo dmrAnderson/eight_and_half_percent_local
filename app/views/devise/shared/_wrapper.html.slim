@@ -5,6 +5,7 @@
         .card-body.mx-3
           .text-center.py-4
             = yield
+          = render Flash::ErrorComponent.new
           = yield :form
           hr
           = render 'devise/shared/links'

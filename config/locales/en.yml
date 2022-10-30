@@ -1,2 +1,5 @@
 en:
-  confirm: 'Are you sure?'
+  confirm: "Are you sure?"
+  invisible_captcha:
+    sentence_for_humans: "Ignore this field"
+    timestamp_error_message: "Sorry, something went wrong! Try again please."

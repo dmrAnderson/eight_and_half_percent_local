@@ -3,6 +3,9 @@
 
   = content_for :form do
     = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+
+      = invisible_captcha
+
       = f.input :email,
                   required: true,
                   autofocus: true,
