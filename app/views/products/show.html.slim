@@ -1,7 +1,9 @@
 = turbo_frame_tag :products_page, class: 'd-block container' do
   = render ProductComponent.new(product: @product)
 
-  = render Navigation::BackButtonComponent.new
-  = link_to 'Edit this product', edit_product_path(@product)
-
-  = link_to 'Destroy this product', @product, data: { turbo_method: :delete, turbo_confirm: t('confirm'), turbo_frame: :_top }
+  .btn-group.btn-group-sm
+    = render Button::BackComponent.new
+    = link_to edit_product_path(@product), class: 'btn btn-outline-primary' do
+      = render Icon::BaseComponent.new(klass: 'pencil-square').with_content('Edit')
+    = link_to @product, data: { turbo_method: :delete, turbo_confirm: t('confirm'), turbo_frame: :_top }, class: 'btn btn-outline-primary' do
+      = render Icon::BaseComponent.new(klass: 'trash').with_content('Destroy')

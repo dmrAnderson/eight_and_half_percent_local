@@ -1,4 +1,5 @@
 en:
+  loading: " Loading..."
   confirm: "Are you sure?"
   invisible_captcha:
     sentence_for_humans: "Ignore this field"

@@ -3,10 +3,7 @@
 class Flash::BaseComponent < ApplicationComponent
   def call
     tag.div class: "alert alert-#{_bg_class} alert-dismissible fade show" do
-      capture do
-        concat body
-        concat close_button
-      end
+      body.concat(close_button)
     end
   end
 
@@ -17,7 +14,7 @@ class Flash::BaseComponent < ApplicationComponent
   end
 
   def close_button
-    button_tag '', data: { bs_dismiss: 'alert' }, type: :button, class: 'btn-close'
+    button_tag '', type: :button, data: { bs_dismiss: 'alert' }, class: 'btn-close'
   end
 
   def render?
