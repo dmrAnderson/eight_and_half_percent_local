@@ -11,6 +11,7 @@ gem 'bootsnap', require: false
 gem 'cssbundling-rails'
 gem 'devise', '~> 4.8'
 gem 'friendly_id', '~> 5.4', '>= 5.4.2'
+gem 'invisible_captcha', '~> 2.0'
 gem 'jsbundling-rails'
 gem 'omniauth-google-oauth2', '~> 1.1', '>= 1.1.1'
 gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.1'
@@ -41,10 +42,10 @@ group :test do
   gem 'bundler-audit', '~> 0.9.1', require: false
   gem 'database_cleaner-active_record', '~> 2.0', '>= 2.0.1', require: false
   gem 'rspec-rails', '~> 6.0', '>= 6.0.1', require: false
-  gem 'rubocop', '~> 1.37', require: false
+  gem 'rubocop', '~> 1.37', '>= 1.37.1', require: false
   gem 'rubocop-performance', '~> 1.15', require: false
-  gem 'rubocop-rails', '~> 2.17', require: false
-  gem 'rubocop-rspec', '~> 2.13', '>= 2.13.2', require: false
+  gem 'rubocop-rails', '~> 2.17', '>= 2.17.2', require: false
+  gem 'rubocop-rspec', '~> 2.14', '>= 2.14.2', require: false
   gem 'simplecov', '~> 0.21.2', require: false
   gem 'slim_lint', '~> 0.22.1', require: false
 end

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
+  invisible_captcha only: %i[create]
   before_action :configure_account_update_params, only: %i[update]
 
   protected

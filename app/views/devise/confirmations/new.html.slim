@@ -3,6 +3,9 @@
 
   = content_for :form do
     = simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
+
+      = invisible_captcha
+
       = f.full_error :confirmation_token
       = f.input :email,
                   required: true,

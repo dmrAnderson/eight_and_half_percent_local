@@ -1,14 +1,12 @@
 # frozen_string_literal: true
 
 class User::AvatarComponent < ApplicationComponent
-  GRAVATAR_URL = 'https://secure.gravatar.com/avatar'
-
   def initialize(user:)
     @user = user
   end
 
   def call
-    image_tag content, alt: email, class: 'rounded', loading: 'lazy'
+    image_tag content, alt: email, loading: 'lazy', class: 'rounded'
   end
 
   private
@@ -22,6 +20,9 @@ class User::AvatarComponent < ApplicationComponent
   end
 
   def gravatar_url
-    [GRAVATAR_URL, Digest::MD5.hexdigest(email)].join('/')
+    URI::HTTPS.build(
+      host: 'secure.gravatar.com',
+      path: "/avatar/#{Digest::MD5.hexdigest(email)}"
+    ).to_s
   end
 end
