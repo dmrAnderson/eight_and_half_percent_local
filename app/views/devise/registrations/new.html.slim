@@ -20,4 +20,8 @@
               required: true,
               input_html: { autocomplete: 'new-password', minlength: Devise.password_length.min, maxlength: Devise.password_length.max }
 
+      = f.input :privacy_policy,
+              required: true,
+              as: :boolean
+
       = render Button::SubmitFormComponent.new(f).with_content('Sign up')

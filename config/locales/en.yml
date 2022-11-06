@@ -1,6 +1,9 @@
 en:
   empty_page: "There are no items on this list yet"
   loading: " Loading..."
+  search: "Search..."
+  home: "Home"
+  privacy_policy: "Privacy Policy"
   confirm: "Are you sure?"
   invisible_captcha:
     sentence_for_humans: "Ignore this field"

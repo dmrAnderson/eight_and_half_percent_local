@@ -7,7 +7,7 @@
     .col
       = search_form_for @query, data: { turbo_frame: :collection, turbo_action: :advance, controller: 'form', action: 'input->form#submit' } do |f|
         .input-group.mb-3
-          = f.search_field :name_cont, class: 'form-control', placeholder: 'Search...'
+          = f.search_field :name_cont, class: 'form-control', placeholder: t('search')
     .col
       = turbo_frame_tag :collection, class: 'row row-cols-1 gy-4' do
         .col
