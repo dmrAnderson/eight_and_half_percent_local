@@ -10,3 +10,10 @@ button {
     span.show-when-disabled { display: initial; }
   }
 }
+
+.empty {
+  display: none;
+  &:only-child {
+    display: revert;
+  }
+}
