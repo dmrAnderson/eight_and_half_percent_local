@@ -33,7 +33,7 @@ gem 'view_component', '~> 2.75'
 
 group :development, :test do
   gem 'factory_bot_rails', '~> 6.2'
-  gem 'faker', '~> 2.23'
+  gem 'faker', '~> 3.0'
   gem 'letter_opener', '~> 1.8', '>= 1.8.1'
 end
 
