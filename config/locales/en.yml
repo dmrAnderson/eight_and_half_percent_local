@@ -1,4 +1,5 @@
 en:
+  empty_page: "There are no items on this list yet"
   loading: " Loading..."
   confirm: "Are you sure?"
   invisible_captcha:
