@@ -11,6 +11,9 @@ en:
       html: '<strong title="required">*</strong>'
     error_notification:
       default_message: "Please review the problems below:"
+    labels:
+      user:
+        privacy_policy: "I agree to the Privacy Policy"
     # Examples
     # labels:
     #   defaults:

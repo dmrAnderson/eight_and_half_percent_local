@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   draw(:users)
 
+  get :privacy_policy, to: 'home#privacy_policy'
+
   resources :products
 
   resource :cart, only: :show do

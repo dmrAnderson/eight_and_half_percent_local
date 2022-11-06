@@ -1,0 +1,19 @@
+footer
+  .py-3.my-4.border-top
+    ul.nav.justify-content-center
+      li.nav-item
+        = link_to t('home'), root_path, data: { turbo_frame: :root, turbo_action: :advance }, class: 'nav-link px-2 text-muted'
+      li.nav-item
+        = link_to t('privacy_policy'), privacy_policy_path, data: { turbo_frame: :_self }, class: 'nav-link px-2 text-muted'
+    ul.nav.justify-content-center
+      li.nav-item
+        = link_to '#', class: 'nav-link px-2 text-dark' do
+          = render Icon::BaseComponent.new(klass: 'twitter')
+      li.nav-item
+        = link_to '#', class: 'nav-link px-2 text-dark' do
+          = render Icon::BaseComponent.new(klass: 'instagram')
+      li.nav-item
+        = link_to '#', class: 'nav-link px-2 text-dark' do
+          = render Icon::BaseComponent.new(klass: 'facebook')
+    .text-center
+      small.text-muted © #{Date.current.year} Company, Inc

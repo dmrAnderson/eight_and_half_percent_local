@@ -10,4 +10,6 @@ class User < ApplicationRecord
          :omniauthable, omniauth_providers: %i[google_oauth2]
 
   has_one :cart, dependent: :destroy
+
+  validates :privacy_policy, acceptance: true
 end
