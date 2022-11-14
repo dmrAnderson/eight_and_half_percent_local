@@ -15,4 +15,5 @@
                   autofocus: true,
                   input_html: { autocomplete: 'email', pattern: Devise.email_regexp }
 
-      = render Button::SubmitFormComponent.new(f).with_content('Resend unlock instructions')
+      = render Button::SubmitFormComponent.new(f) do
+        = render Icon::Devise::UnlockComponent.new.with_content('Resend unlock instructions')

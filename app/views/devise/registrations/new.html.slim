@@ -24,4 +24,5 @@
               required: true,
               as: :boolean
 
-      = render Button::SubmitFormComponent.new(f).with_content('Sign up')
+      = render Button::SubmitFormComponent.new(f) do
+        = render Icon::Devise::RegistrationComponent.new

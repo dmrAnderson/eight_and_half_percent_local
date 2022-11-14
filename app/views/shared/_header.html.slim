@@ -34,7 +34,7 @@ header
           - else
             li.nav-item
               = link_to new_user_registration_path, data: { turbo_frame: :root, turbo_action: :advance }, class: 'nav-link' do
-                = render Icon::BaseComponent.new(klass: 'person-plus').with_content('Sign up')
+                = render Icon::Devise::RegistrationComponent.new
             li.nav-item
               = link_to new_user_session_path, data: { turbo_frame: :root, turbo_action: :advance }, class: 'nav-link active' do
-                = render Icon::BaseComponent.new(klass: 'person-check').with_content('Sign in')
+                = render Icon::Devise::SessionComponent.new
