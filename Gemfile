@@ -42,7 +42,7 @@ group :test do
   gem 'bundler-audit', '~> 0.9.1', require: false
   gem 'database_cleaner-active_record', '~> 2.0', '>= 2.0.1', require: false
   gem 'rspec-rails', '~> 6.0', '>= 6.0.1', require: false
-  gem 'rubocop', '~> 1.38', require: false
+  gem 'rubocop', '~> 1.39', require: false
   gem 'rubocop-performance', '~> 1.15', require: false
   gem 'rubocop-rails', '~> 2.17', '>= 2.17.2', require: false
   gem 'rubocop-rspec', '~> 2.15', require: false

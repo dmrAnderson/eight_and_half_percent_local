@@ -1,2 +1,5 @@
 = turbo_frame_tag :root do
+  - unless devise_controller?
+    .container
+      = render NotificationsComponent.new
   = yield

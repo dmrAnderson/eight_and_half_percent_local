@@ -13,7 +13,5 @@ html.h-100
   body.h-100.d-flex.flex-column
     = render 'shared/header'
     main.flex-grow-1
-      - unless devise_controller?
-        = render NotificationsComponent.new
       = yield
     = render 'shared/footer'

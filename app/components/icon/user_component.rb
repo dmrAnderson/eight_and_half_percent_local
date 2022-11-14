@@ -22,6 +22,6 @@ class Icon::UserComponent < ApplicationComponent
   def klass
     {
       'google_oauth2' => 'google'
-    }.fetch(provider) { 'person' }
+    }.fetch(provider) { 'person-gear' }
   end
 end

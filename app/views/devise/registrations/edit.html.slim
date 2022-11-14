@@ -39,7 +39,8 @@
                     required: true,
                     input_html: { autocomplete: 'current-password', minlength: Devise.password_length.min, maxlength: Devise.password_length.max }
 
-            = render Button::SubmitFormComponent.new(f, data: { turbo_frame: :_top }).with_content('Update')
+            = render Button::SubmitFormComponent.new(f, data: { turbo_frame: :_top }) do
+              = render Icon::BaseComponent.new(klass: 'person-up').with_content('Update')
       .card
         .card-body
           h3 Cancel my account

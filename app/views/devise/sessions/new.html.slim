@@ -19,4 +19,5 @@
               input_html: { autocomplete: 'current-password', minlength: Devise.password_length.min, maxlength: Devise.password_length.max }
       = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
 
-      = render Button::SubmitFormComponent.new(f, data: { turbo_frame: :_top }).with_content('Sign in')
+      = render Button::SubmitFormComponent.new(f, data: { turbo_frame: :_top }) do
+        = render Icon::Devise::SessionComponent.new
