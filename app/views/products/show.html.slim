@@ -1,9 +1,33 @@
 = turbo_frame_tag :products_page, class: 'd-block container' do
-  = render ProductComponent.new(product: @product)
-
-  .btn-group.btn-group-sm
-    = render Button::BackComponent.new
-    = link_to edit_product_path(@product), class: 'btn btn-outline-primary' do
-      = render Icon::BaseComponent.new(klass: 'pencil-square').with_content('Edit')
-    = link_to @product, data: { turbo_method: :delete, turbo_confirm: t('confirm'), turbo_frame: :_top }, class: 'btn btn-outline-primary' do
-      = render Icon::BaseComponent.new(klass: 'trash').with_content('Destroy')
+  .row.row-cols-1
+    .col
+      .d-flex.justify-content-between
+        = render Button::BackComponent.new
+        .btn-group.btn-group-sm
+          = link_to edit_product_path(@product), class: 'btn btn-outline-primary' do
+            = render Icon::BaseComponent.new(klass: 'pencil-square').with_content('Edit')
+          = link_to @product, data: { turbo_method: :delete, turbo_confirm: t('confirm'), turbo_frame: :_top }, class: 'btn btn-outline-primary' do
+            = render Icon::BaseComponent.new(klass: 'trash').with_content('Destroy')
+    .col
+      = render ProductComponent.new(product: @product)
+    - if @product.images.any?
+      .col
+        #carouselExampleCaptions.carousel.slide data-bs-ride="false"
+          .carousel-indicators
+            button.active aria-current="true" aria-label=("Slide 1") data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"
+            - @product.images.offset(1).size.times do |i|
+              button aria-label=("Slide #{i.next}") data-bs-slide-to=i.next.next data-bs-target="#carouselExampleCaptions" type="button"
+          .carousel-inner
+            .carousel-item.active
+              - @product.images.first.then do |image|
+                = image_tag image, loading: 'lazy', class: 'img d-block w-100'
+            - @product.images.offset(1).each do |image|
+              .carousel-item
+                = image_tag image, loading: 'lazy', class: 'img d-block w-100'
+          - if @product.images.many?
+            button.carousel-control-prev data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button"
+              span.carousel-control-prev-icon aria-hidden="true"
+              span.visually-hidden Previous
+            button.carousel-control-next data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button"
+              span.carousel-control-next-icon aria-hidden="true"
+              span.visually-hidden Next

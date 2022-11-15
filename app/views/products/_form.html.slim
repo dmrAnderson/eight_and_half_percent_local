@@ -1,0 +1,6 @@
+= simple_form_for product do |f|
+  = f.input :name
+  = f.input :price
+  = f.input :images, input_html: { multiple: true, direct_upload: true }
+
+  = render Button::SubmitFormComponent.new(f).with_content('Update')

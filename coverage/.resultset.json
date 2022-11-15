@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/channels/application_cable/channel.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/channels/application_cable/channel.rb": {
         "lines": [
           null,
           null,
@@ -13,7 +13,7 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/channels/application_cable/connection.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/channels/application_cable/connection.rb": {
         "lines": [
           null,
           null,
@@ -25,7 +25,7 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/components/application_component.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/application_component.rb": {
         "lines": [
           null,
           null,
@@ -34,7 +34,7 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/components/icon_component.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/button/back_component.rb": {
         "lines": [
           null,
           null,
@@ -42,14 +42,12 @@
           0,
           0,
           0,
-          0,
           null,
           0,
           0,
           0,
           0,
           0,
-          0,
           null,
           0,
           null,
@@ -61,8 +59,8 @@
           null,
           0,
           0,
-          null,
           0,
+          null,
           0,
           0,
           0,
@@ -71,30 +69,7 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/components/orderables/forms/add_component.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/components/orderables/forms/base_component.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/button/omni_auth_component.rb": {
         "lines": [
           null,
           null,
@@ -105,7 +80,25 @@
           0,
           null,
           0,
+          0,
+          0,
           null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
           0,
           null,
           0,
@@ -122,7 +115,7 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/components/orderables/forms/remove_component.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/button/submit_form_component.rb": {
         "lines": [
           null,
           null,
@@ -130,11 +123,25 @@
           0,
           0,
           0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
           null,
           0,
           0,
           0,
           null,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -145,159 +152,12 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/components/pagy_component.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/empty_content_component.rb": {
         "lines": [
           null,
           null,
           0,
           0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/controllers/application_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/controllers/carts_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/controllers/home_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/controllers/orderables_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/controllers/products_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -317,7 +177,745 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/controllers/users/turbo_devise_controller.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/flash/alert_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/flash/base_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/flash/error_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/flash/notice_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/icon/base_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/icon/brand_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/icon/devise/confirmation_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/icon/devise/password_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/icon/devise/registration_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/icon/devise/session_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/icon/devise/unlock_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/icon/user_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/loader_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/notifications_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/orderables/forms/add_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/orderables/forms/base_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/orderables/forms/remove_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/pagy_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/product_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/components/user/avatar_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/carts_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/concerns/errors_handlers/not_found.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/home_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/orderables_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/products_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/users/confirmations_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/users/omniauth_callbacks_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/users/passwords_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/users/registrations_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/users/sessions_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/users/turbo_devise_controller.rb": {
         "lines": [
           null,
           null,
@@ -345,44 +943,7 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/helpers/application_helper.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/jobs/application_job.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/mailers/application_mailer.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/models/application_record.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/controllers/users/unlocks_controller.rb": {
         "lines": [
           null,
           null,
@@ -393,15 +954,34 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/models/cart.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/helpers/application_helper.rb": {
         "lines": [
           null,
           null,
           0,
-          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/jobs/application_job.rb": {
+        "lines": [
+          null,
           null,
           0,
-          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/mailers/application_mailer.rb": {
+        "lines": [
+          null,
           null,
           0,
           0,
@@ -411,11 +991,21 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/models/orderable.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/models/application_record.rb": {
         "lines": [
           null,
           null,
           0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/models/cart.rb": {
+        "lines": [
+          null,
+          null,
           0,
           0,
           null,
@@ -430,7 +1020,7 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/models/product.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/models/orderable.rb": {
         "lines": [
           null,
           null,
@@ -438,6 +1028,10 @@
           0,
           0,
           null,
+          0,
+          0,
+          null,
+          0,
           0,
           0,
           0
@@ -445,24 +1039,102 @@
         "branches": {
         }
       },
-      "/Users/dmrAnderson/projects/EightAndAHalfPercent/app/models/user.rb": {
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/models/product.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/models/user.rb": {
         "lines": [
           null,
           null,
           0,
           0,
           null,
-          null,
-          null,
-          0,
-          0,
-          null,
           0,
           null,
           0,
           0,
           0,
           null,
+          0,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/services/application_service.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/dmrAnderson/projects/eight_and_half_percent/app/services/users/google_oauth2.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           null,
           0,
@@ -474,6 +1146,6 @@
         }
       }
     },
-    "timestamp": 1662829033
+    "timestamp": 1668522642
   }
 }

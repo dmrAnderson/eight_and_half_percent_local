@@ -22,4 +22,5 @@ Lint/MissingSuper:
   Enabled: false
 Style/RedundantFetchBlock:
   Enabled: false
-
+Lint/UnusedBlockArgument:
+  Enabled: false

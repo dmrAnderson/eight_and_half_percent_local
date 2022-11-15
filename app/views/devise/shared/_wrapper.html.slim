@@ -3,9 +3,9 @@
     .col-sm-8.col-lg-8.col-xl-6.col-xxl-4
       .card
         .card-body.mx-3
-          .text-center.py-4
+          h1.fw-bold.mb-0.fs-2.text-center.py-4
             = yield
           = render Flash::ErrorComponent.new
-          = yield :form
-          hr
+          = yield :body
+          hr.my-4
           = render 'devise/shared/links'

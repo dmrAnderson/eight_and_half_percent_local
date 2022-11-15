@@ -1,7 +1,7 @@
 = render 'devise/shared/wrapper' do
-  h2 Sign up
+  | Sign up
 
-  = content_for :form do
+  = content_for :body do
     = simple_form_for resource,
             as: resource_name,
             url: registration_path(resource_name) do |f|

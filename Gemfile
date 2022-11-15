@@ -7,10 +7,12 @@ ruby '3.1.2'
 
 gem 'rails', '~> 7.0', '>= 7.0.4'
 
+gem 'aws-sdk-s3', '~> 1.117', '>= 1.117.1', require: false
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
 gem 'devise', '~> 4.8'
 gem 'friendly_id', '~> 5.4', '>= 5.4.2'
+gem 'image_processing', '~> 1.12', '>= 1.12.2'
 gem 'invisible_captcha', '~> 2.0'
 gem 'jsbundling-rails'
 gem 'omniauth-google-oauth2', '~> 1.1', '>= 1.1.1'
@@ -29,7 +31,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'view_component', '~> 2.75'
 
 # gem "kredis"
-# gem "image_processing", "~> 1.2"
 
 group :development, :test do
   gem 'factory_bot_rails', '~> 6.2'
