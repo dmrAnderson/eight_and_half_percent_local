@@ -7,23 +7,24 @@ class ProductsController < ApplicationController
   before_action :set_product, only: %i[show edit update destroy]
 
   def index
-    @query = Product.ransack(params[:query])
+    @query = Product.newest_first.ransack(params[:query])
     @pagy, @products = pagy(@query.result(distinct: true))
   end
 
-  def show; end
+  # def show; end
 
   def new
     @product = Product.new
   end
 
-  def edit; end
+  # def edit; end
 
   def create
     @product = Product.new(product_params)
 
     if @product.save
-      redirect_to @product, notice: 'Product was successfully created.'
+      flash.now[:notice] = 'Product was successfully created.'
+      redirect_to @product
     else
       render :new, status: :unprocessable_entity
     end
@@ -31,7 +32,8 @@ class ProductsController < ApplicationController
 
   def update
     if @product.update(product_params)
-      redirect_to @product, notice: 'Product was successfully updated.'
+      flash.now[:notice] = 'Product was successfully updated.'
+      redirect_to @product
     else
       render :edit, status: :unprocessable_entity
     end
@@ -39,7 +41,8 @@ class ProductsController < ApplicationController
 
   def destroy
     @product.destroy
-    redirect_to root_path, notice: 'Product was successfully destroyed.', status: :see_other
+    flash.now[:notice] = 'Product was successfully destroyed.'
+    redirect_to root_path, status: :see_other
   end
 
   private
@@ -49,6 +52,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:name, :price)
+    params.require(:product).permit(:name, :price, images: [])
   end
 end

@@ -1,7 +1,7 @@
 = render 'devise/shared/wrapper' do
-  h2 Resend confirmation instructions
+  | Resend confirmation instructions
 
-  = content_for :form do
+  = content_for :body do
     = simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
 
       = invisible_captcha

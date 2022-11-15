@@ -1,9 +1,9 @@
-= turbo_frame_tag @product do
+= turbo_frame_tag @product, class: 'd-block container' do
+  .d-flex.justify-content-between
+    = render Button::BackComponent.new
+    = link_to @product, class: 'btn btn-outline-primary btn-sm' do
+      = render Icon::BaseComponent.new(klass: 'arrow-up-right-circle').with_content('View details')
+
   h1 Editing product
 
   = render 'form', product: @product
-
-  br
-
-  = link_to 'Show this product', @product
-  = render Button::BackComponent.new

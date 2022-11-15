@@ -3,6 +3,8 @@ ul.nav.flex-column.text-center
     - resource_class.omniauth_providers.each do |provider|
       li.nav-item
         = render Button::OmniAuthComponent.new(resource_name, provider)
+.text-center.mt-2
+  small.text-muted.text-center By clicking third-party auth, you agree to the Privacy Policy.
 
 ul.nav.flex-column.alert.alert-light
   - if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations'

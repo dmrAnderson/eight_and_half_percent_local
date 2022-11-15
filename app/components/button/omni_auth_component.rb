@@ -25,7 +25,7 @@ class Button::OmniAuthComponent < ApplicationComponent
   end
 
   def klass
-    'btn btn-dark w-100'
+    'btn btn-outline-dark w-100'
   end
 
   def icon_klass
