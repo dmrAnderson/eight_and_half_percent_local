@@ -11,7 +11,7 @@ gem 'aws-sdk-s3', '~> 1.117', '>= 1.117.1', require: false
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
 gem 'devise', '~> 4.8'
-gem 'friendly_id', '~> 5.4', '>= 5.4.2'
+gem 'friendly_id', '~> 5.5'
 gem 'image_processing', '~> 1.12', '>= 1.12.2'
 gem 'invisible_captcha', '~> 2.0'
 gem 'jsbundling-rails'
