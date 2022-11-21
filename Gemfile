@@ -39,7 +39,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'brakeman', '~> 5.3', '>= 5.3.1', require: false
+  gem 'brakeman', '~> 5.4', require: false
   gem 'bundler-audit', '~> 0.9.1', require: false
   gem 'database_cleaner-active_record', '~> 2.0', '>= 2.0.1', require: false
   gem 'rspec-rails', '~> 6.0', '>= 6.0.1', require: false
