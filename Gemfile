@@ -28,7 +28,7 @@ gem 'slim-rails', '~> 3.5'
 gem 'stimulus-rails'
 gem 'turbo-rails', '~> 1.3', '>= 1.3.2'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'view_component', '~> 2.75'
+gem 'view_component', '~> 2.79'
 
 # gem "kredis"
 
