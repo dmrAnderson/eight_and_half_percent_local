@@ -1,4 +1,4 @@
-[![RoR CI](https://github.com/dmrAnderson/EightAndAHalfPercent/actions/workflows/rubyonrails.yml/badge.svg?branch=main)](https://github.com/dmrAnderson/EightAndAHalfPercent/actions/workflows/rubyonrails.yml)
+[![RoR CI](https://github.com/dmrAnderson/eight_and_half_percent/actions/workflows/rubyonrails.yml/badge.svg?branch=dev)](https://github.com/dmrAnderson/eight_and_half_percent/actions/workflows/rubyonrails.yml)
 
 # README
 
