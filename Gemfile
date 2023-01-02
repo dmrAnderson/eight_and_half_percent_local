@@ -7,7 +7,7 @@ ruby '3.1.2'
 
 gem 'rails', '~> 7.0', '>= 7.0.4'
 
-gem 'aws-sdk-s3', '~> 1.117', '>= 1.117.1', require: false
+gem 'aws-sdk-s3', '~> 1.117', require: false
 gem 'bootsnap', '~> 1.15', require: false
 gem 'cssbundling-rails', '~> 1.1', '>= 1.1.2'
 gem 'devise', '~> 4.8'
